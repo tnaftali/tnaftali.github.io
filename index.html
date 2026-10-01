@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tobias Naftali</title>
+  <meta name="description" content="Tech Strategy Lead at Timeline, improving how we build software in the age of AI agents.">
+  <link rel="canonical" href="https://tnaftali.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tnaftali.github.io/">
+  <meta property="og:title" content="Tobias Naftali">
+  <meta property="og:description" content="Tech Strategy Lead at Timeline, improving how we build software in the age of AI agents.">
+  <meta property="og:image" content="https://tnaftali.github.io/avatar.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@tobiasnaftali">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f3f6fc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#060a14" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}</script>
+</head>
+<body>
+  <div class="blobs" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+  <button class="theme" type="button" aria-label="Switch light or dark theme">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+  </button>
+
+  <main>
+    <header class="intro">
+      <img class="avatar" src="avatar.jpg" alt="Tobias Naftali" width="88" height="88">
+      <h1>Tobias<br>Naftali</h1>
+      <p class="role">Tech Strategy Lead at <a href="https://timeline.co" target="_blank" rel="noopener">Timeline</a>, based in Barcelona.</p>
+      <nav class="links" aria-label="Elsewhere">
+        <a href="https://github.com/tnaftali" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://x.com/tobiasnaftali" target="_blank" rel="noopener">X</a>
+        <a href="https://www.linkedin.com/in/tobias-naftali" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:tobias.naftali@gmail.com">Email</a>
+      </nav>
+    </header>
+
+    <section aria-labelledby="now">
+      <h2 id="now">Now</h2>
+      <p>I'm focused on improving <em>how</em> we build software at Timeline, rather than what we build.</p>
+      <p>Agents now write code faster than our review, testing and release processes were built to handle. So I'm rebuilding those loops, building our own AI tools and agents, and working out which new ideas are worth adopting.</p>
+    </section>
+
+    <section aria-labelledby="before">
+      <h2 id="before">Before</h2>
+      <ol class="timeline">
+        <li><span class="years">2022–2026</span><div><strong>Tech Lead, Timeline</strong><p>Primary technical owner of Timeline Portfolios. Led a team of up to four.</p></div></li>
+        <li><span class="years">2019–2022</span><div><strong>Software Engineer, Timeline</strong><p>Led the first build of Betafolio, which became Timeline Portfolios.</p></div></li>
+        <li><span class="years">2018–2019</span><div><strong>Software Engineer, redbee Studios</strong><p>Full-stack work on a payments platform for a fintech client.</p></div></li>
+        <li><span class="years">2016–2018</span><div><strong>Full-stack Developer, Hexacta</strong><p>Enterprise systems for a large telecom client.</p></div></li>
+        <li><span class="years">2014–2016</span><div><strong>Full-stack Developer, ACHE Software Solutions</strong></div></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="side">
+      <h2 id="side">On the side</h2>
+      <p>I build small tools to try ideas out, mostly around local AI models. They live on <a href="https://github.com/tnaftali" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer>Still trying to quit vim.</footer>
+
+  <script>
+    document.querySelector('.theme').addEventListener('click', function () {
+      var root = document.documentElement
+      var dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+      root.dataset.theme = dark ? 'light' : 'dark'
+      try { localStorage.setItem('theme', root.dataset.theme) } catch (e) {}
+    })
+  </script>
+</body>
+</html>
