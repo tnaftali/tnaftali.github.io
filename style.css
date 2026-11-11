@@ -132,6 +132,36 @@ a:hover { text-decoration-thickness: 2px; }
   box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--accent), 0 0 40px 4px color-mix(in srgb, var(--accent) 45%, transparent);
 }
 
+.photo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .9rem;
+}
+
+/* Speech bubble pointing left at the avatar. */
+.bubble {
+  position: relative;
+  padding: .3rem .75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.bubble::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 8px;
+  height: 8px;
+  border: solid var(--line);
+  border-width: 0 0 1px 1px;
+  background: var(--bg);
+  transform: translateY(-50%) rotate(45deg);
+}
+
 h1 {
   margin: 2rem 0 1.25rem;
   font: 400 clamp(3.25rem, 13vw, 5.5rem)/.92 "Instrument Serif", Georgia, serif;
@@ -181,6 +211,34 @@ p { margin: 0 0 1rem; }
 .years {
   color: var(--muted);
   font-variant-numeric: tabular-nums;
+}
+
+.apps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.apps li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: .8rem 0;
+  border-top: 1px solid var(--line);
+}
+.app-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 22%;
+}
+.apps li > div > a:first-child { font-weight: 600; }
+.tag {
+  margin-left: .35rem;
+  color: var(--muted);
+  font-size: .8rem;
+}
+.apps p {
+  margin: .15rem 0 0;
+  color: var(--muted);
 }
 
 footer {

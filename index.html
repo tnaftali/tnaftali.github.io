@@ -11,9 +11,11 @@
   <meta property="og:title" content="Tobias Naftali">
   <meta property="og:description" content="Tech Strategy Lead at Timeline, improving how we build software in the age of AI agents.">
   <meta property="og:image" content="https://tnaftali.github.io/avatar.jpg">
+  <meta property="og:image:alt" content="Portrait photo of Tobias Naftali">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@tobiasnaftali">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" content="#f3f6fc" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#060a14" media="(prefers-color-scheme: dark)">
   <link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
@@ -30,7 +32,10 @@
 
   <main>
     <header class="intro">
-      <img class="avatar" src="avatar.jpg" alt="Tobias Naftali" width="88" height="88">
+      <div class="photo">
+        <img class="avatar" src="avatar.jpg" alt="Tobias Naftali" width="88" height="88">
+        <span class="bubble">Real photo, not AI</span>
+      </div>
       <h1>Tobias<br>Naftali</h1>
       <p class="role">Tech Strategy Lead at <a href="https://timeline.co" target="_blank" rel="noopener">Timeline</a>, based in Barcelona.</p>
       <nav class="links" aria-label="Elsewhere">
@@ -50,6 +55,7 @@
     <section aria-labelledby="before">
       <h2 id="before">Before</h2>
       <ol class="timeline">
+        <li><span class="years">2026–now</span><div><strong>Tech Strategy Lead, Timeline</strong><p>Own how Timeline reviews, tests and ships software.</p></div></li>
         <li><span class="years">2022–2026</span><div><strong>Tech Lead, Timeline</strong><p>Primary technical owner of Timeline Portfolios. Led a team of up to four.</p></div></li>
         <li><span class="years">2019–2022</span><div><strong>Software Engineer, Timeline</strong><p>Led the first build of Betafolio, which became Timeline Portfolios.</p></div></li>
         <li><span class="years">2018–2019</span><div><strong>Software Engineer, redbee Studios</strong><p>Full-stack work on a payments platform for a fintech client.</p></div></li>
@@ -60,7 +66,13 @@
 
     <section aria-labelledby="side">
       <h2 id="side">On the side</h2>
-      <p>I build small tools to try ideas out, mostly around local AI models. They live on <a href="https://github.com/tnaftali" target="_blank" rel="noopener">GitHub</a>.</p>
+      <p>I build small tools and apps tailored to my own workflows, and to try ideas out. They all live on <a href="https://github.com/tnaftali" target="_blank" rel="noopener">GitHub</a>:</p>
+      <ul class="apps">
+        <li><img class="app-icon" src="icons/groceries.png" alt="" width="48" height="48"><div><a href="https://tnaftali.github.io/groceries/" target="_blank" rel="noopener">Groceries+</a> <span class="tag">Mobile PWA</span><p>A fast, private grocery list for my phone. Made for recurring buys: tap items on and off instead of retyping them every time. Works offline, no account. <a href="https://github.com/tnaftali/groceries" target="_blank" rel="noopener">Source</a></p></div></li>
+        <li><img class="app-icon" src="icons/tasks.png" alt="" width="48" height="48"><div><a href="https://tnaftali.github.io/tasks/" target="_blank" rel="noopener">Tasks</a> <span class="tag">Mobile PWA</span><p>Quick-capture task list with natural language input, offline use and optional encrypted sync. Built when I outgrew Things and needed cross-platform sync. <a href="https://github.com/tnaftali/tasks" target="_blank" rel="noopener">Source</a></p></div></li>
+        <li><img class="app-icon" src="icons/scratchpad.png" alt="" width="48" height="48"><div><a href="https://github.com/tnaftali/scratchpad" target="_blank" rel="noopener">Scratchpad</a> <span class="tag">Linux</span><p>A native Raycast Notes equivalent for Linux: a floating markdown scratchpad with live styling, saved to a plain file.</p></div></li>
+        <li><img class="app-icon" src="icons/s1.svg" alt="" width="48" height="48"><div><a href="https://github.com/tnaftali/s1-tui" target="_blank" rel="noopener">s1</a> <span class="tag">Terminal</span><p>Built to play with Jev and other System One models. Terminal app that answers yes/no, pick-one or score questions with a confidence level.</p></div></li>
+      </ul>
     </section>
   </main>
 
